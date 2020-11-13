@@ -1,0 +1,10 @@
+.b1 {
+	position: relative;
+bottom: 100px; /* Положение от нижнего края */
+    right: 100px; /* Положение от правого края */
+    bottom: 0; right: 0;
+	border-radius:  5px;
+	background: red; /* Синий цвет фона */ 
+    color: white; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+   }

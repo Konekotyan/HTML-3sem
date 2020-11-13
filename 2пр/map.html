@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Пример использование тега <map></title>
+  <style>
+    .pic {
+      text-align: center;
+    }
+</style>
+</head>
+	<body>
+		<p class="pic"><img src = "self-portrait with death.jpg" width="720" height="920"
+      usemap = "#self-portrait with death" alt = "3 области" >
+		<map name = "self-portrait with death" >
+			<area shape = "rect" coords = "430,400,200,80" href = "https://ru.wikipedia.org/wiki/Бёклин,_Арнольд" alt = "Арнольд Бёклин" >
+			<area shape = "circle" coords = "570,900,150" href = "https://ru.wikipedia.org/wiki/Палитра" alt = "Палитра" >
+			<area shape = "poly" coords = "500,40, 430,70, 440,280, 455,310, 520,335, 570,300, 585,270, 600,220, 610,150, 580,80"
+        href = "https://ru.wikipedia.org/wiki/Смерть" alt = "Смерть" >
+		</map>
+	</body>
+</html>

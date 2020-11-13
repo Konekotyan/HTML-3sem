@@ -1,0 +1,357 @@
+.symbols span {
+    font-size: 0px;
+    line-height: 1;
+    display:block;
+}
+.symbols span:nth-child(1){
+  font-size: 25px;
+  margin-top: -15px;
+  background-color: gold;
+  display: inline-block;
+}
+.symbols span:nth-child(2){
+  font-size: 30px;
+  margin-top: 15px;
+  font-family:fantasy;
+  color: purple;
+  display: block;
+}
+.symbols span:nth-child(3){
+  font-size: 20px;
+  margin-top: 15px;
+  font-variant:small-caps;
+  color: red
+  display: inline-block;
+}
+.symbols span:nth-child(4){
+  font-size: 40px;
+  margin-top: 15px;
+  font-variant: inherit;
+  background-color: lightgreen;
+  font-style:italic;
+  display: inline-block;
+}
+.symbols span:nth-child(5){
+  font-size: 20px;
+  margin-top: 15px;
+  font-style:oblique;
+  font-weight:bold;
+  font-family:sans-serif;
+  display: block;
+}
+
+/* Левая диночная кавычка */
+.lsquo:before {
+content: '\2018';
+}
+/* Правая одиночная кавычка */
+.rsquo:before {
+content: '\2019';
+}
+
+/* Правая одиночная кавычка */
+.sbquo:before {
+content: '\201A';
+}
+
+/* Левая двойная кавычка */
+.idquo:before {
+content: '\201C';
+}
+
+/* Правая двойная кавычка */
+.rdquo:before {
+content: '\201D';
+}
+
+/* Нижняя двойная кавычка */
+.bdquo:before {
+content: '\201E';
+}
+
+/* Левая двойная угловая кавычка */
+.iaquo:before {
+content: '\AB';
+}
+
+/* Правая двойная угловая кавычка */
+.raquo:before {
+content: '\BB';
+}
+
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+border: solid;
+border-color: blue;
+border-width: 1.6px;
+text-align: center;
+}
+th, tr:first-child {
+background: white;
+color: blue;
+}
+th, td {
+border-top: dotted;
+border-width: 2px;
+border-color: white;
+padding: 10px 50px;
+}
+td {
+background:#abdcff;
+}
+th:first-child, td:first-child {
+padding: 10px 30px 10px 5px;
+text-align: left;
+}
+tr:hover td{
+  background:#6bc1ff;
+}
+
+.b {
+    width: 150px; /* Ширина */
+    height: 50px; /* Высота */
+    border: 4px solid #000; /* Параметры рамки */
+    margin-bottom: 10px; /* Отступ снизу */
+    position: relative; /* Относительное позиционирование */
+   }
+   .b::before, .b::after {
+    content: '';
+    position: absolute;
+   }
+   .b::after { /* Добавляем контакт справа */
+    width: 10px;
+    height: 20px;
+    background: #000;
+    right: -10px; top: 15px;
+   }
+   .b::before { height: 100%; }
+   .low::before { /* Красная батарейка */
+    width: 33%;
+    background: #ED1C24;
+   }
+   .medium::before { /* Жёлтая батарейка */
+    width: 66%;
+    background: #FFC60B;
+   }
+   .high::before { /* Зелёная батарейка */
+    width: 100%;
+    background: #00A055;
+   }
+
+.wrapper {
+	font-style: italic;
+  font-size: 50px;
+  width: 800px;
+	padding: 50px;
+}
+
+.root {
+	display: inline-block;
+	vertical-align: middle;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	transform: skew(-15deg);
+	transform-origin: bottom left;
+	margin: 0 10px;
+	position: relative;
+}
+
+.root:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 40%;
+	width: 9px;
+	left: -11px;
+	border-top: 2px solid;
+	border-right: 2px solid;
+	transform: skew(30deg);
+	transform-origin: bottom right;
+}
+
+.radicand {
+	display: inline-block;
+	padding-left: 3px;
+	transform: skew(15deg);
+}
+
+   .scene {
+     width: 150px;
+     height: 50px;
+     perspective: 900px;
+     margin: 16.3em auto;
+   }
+   .cube {
+     width: 150px;
+     height: 50px;
+     position: relative;
+     margin: 12.3em auto;
+     transform: translateZ(-50px);
+     transition: transform 0.5s;
+     transform-style: preserve-3d;
+   }
+   .cube-face {
+     position: absolute;
+     width: 200px;
+     height: 50px;
+     text-align: center;
+     font-size: 25px;
+     padding-top: 20px;
+     cursor: pointer;
+     background: #041f1e;
+     color: whitesmoke;
+   }
+   .front-face {
+     transform: rotateY(0deg) translateZ(24px);
+     box-shadow: inset 0 0 10px #abf5b3;
+   }
+   .top-face {
+     transform: rotateX(90deg) translateZ(34px) translateY(-11.5px);
+     background: #e01a4f;
+     color: whitesmoke;
+     box-shadow: inset 0 0 12px #00ff1a;
+   }
+   .right-face {
+     transform: rotateY(90deg) translateX(11px) translateZ(165px) translateY(1px);
+     background: #00c414;
+     width: 70px;
+     height: 50px;
+     color: whitesmoke;
+     box-shadow: inset 0 0 12px #00f;
+   }
+   .bottom-face{
+     transform: rotateX(-90deg) translateZ(35px) translateY(10px);
+     background: #00c414;
+     width: 200px;
+     height: 50px;
+     color: whitesmoke;
+     box-shadow: inset 0 0 12px #00f;
+   }
+   .cube:hover:nth-child(1) {
+     transform: rotateX(-90deg);
+     transition: 1500ms;
+   }
+   .cube:hover:nth-child(2) {
+     transform: rotateY(-90deg);
+     transition: 300ms;
+   }
+   .cube:hover:nth-child(3) {
+     transform: rotateX(90deg);
+     transition: 300ms;
+   }
+
+   .container {
+     display: inline-block;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     flex-wrap: wrap;
+     width: 80vw;
+     margin: 0 auto;
+     min-height: 100vh;
+     position: relative;
+     left: -65px;
+   }
+   .btn {
+     flex: 1 1 auto;
+     margin: 10px;
+     padding: 30px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+    }
+
+   .btn:hover {
+     background-position: right center; /* change the direction of the change here */
+   }
+
+   .btn-1 {
+     background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+   }
+   .btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* Creates a horizontal list with spacing*/
+
+li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+
+/*Style for menu links */
+
+li a {
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #2f3036;
+  text-decoration: none;
+
+}
+
+/* Hover State for top level links*/
+
+li:hover a {
+  background: #19c589;
+  cursor: crosshair
+}
+
+/* Style for dropdown links*/
+
+li:hover ul a {
+  background: #171a19;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer
+}
+
+/* Hover state for dropdown links */
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
+}
+
+/*Hide dropdown links until they are need */
+li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical */
+
+li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping */
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/*Display the dropdown on hover */
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}

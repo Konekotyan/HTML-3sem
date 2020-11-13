@@ -1,0 +1,114 @@
+.border {
+padding: 0;
+}
+.border li {
+font-family: "Trebuchet MS";
+padding: 5px 0px;
+margin-bottom: 5px;
+font-size: 20px;
+}
+
+.border li:nth-child(1){
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+  font-weight: normal;
+  color: red;
+  font-size: 40px;
+}
+.border ol li:nth-child(1){
+  list-style: upper-roman;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: green;
+  font-weight: normal;
+  color: violet;
+  font-size: 25px;
+}
+.border ol ol li:nth-child(1){
+  list-style: unset;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: gold;
+  font-weight: bold;
+  font-family: inherit;
+  color: black;
+  font-size: 20px;
+}
+
+.border ol ol li:nth-child(2){
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: lightgreen;
+  font-style: italic;
+}
+.border ol ol li:nth-child(3){
+  text-decoration: underline overline;
+  text-decoration-style: solid;
+  text-decoration-color: pink;
+  font-style:normal;
+  font-family: sans-serif;
+}
+.border ol ol li:nth-child(4){
+  text-decoration: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: red;
+  font-style: italic;
+  color: green;
+  font-family: Trebuchet;
+  font-weight: bolder;
+}
+.border ol ol li:nth-child(5){
+  text-decoration: overline;
+  text-decoration-style: dotted;
+  text-decoration-color: brown;
+  font-style: oblique;
+  color: orange;
+  font-family: Helvetica;
+}
+.border ol ol li:nth-child(6){
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: black;
+  font-style: normal;
+  color: blue ;
+  font-variant:small-caps;
+  font-family: system;
+}
+.border ol ol li:nth-child(7){
+  text-decoration: line-through;
+  text-decoration-style: dotted;
+  text-decoration-color: gold;
+  font-style: normal;
+  color: black;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.border ol ol li:nth-child(8){
+  text-decoration: overline underline;
+  text-decoration-style: wavy;
+  text-decoration-color: gold;
+  font-style: normal;
+  color: red;
+  font-family: Gabriola;
+  font-size: 25px;
+}
+.border ol ol li:nth-child(9){
+  text-decoration: overline underline ;
+  text-decoration-style: double;
+  text-decoration-color: black;
+  font-style: oblique;
+  font-weight: bold;
+  color: blue;
+  font-family: serif;
+}
+.border ol ol li:nth-child(10){
+  text-decoration: line-through;
+  text-decoration-style: double;
+  text-decoration-color: brown;
+  font-style: normal;
+  font-weight: bold;
+  color: grey;
+  font-family: serif;
+}

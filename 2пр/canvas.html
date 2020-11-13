@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+  <script>
+   window.onload = function() {
+    var drawingCanvas = document.getElementById('smile');
+    if(drawingCanvas && drawingCanvas.getContext) {
+     var context = drawingCanvas.getContext('2d');
+     // Рисуем окружность
+     context.strokeStyle = "#800080	";
+     context.fillStyle = "#fc0";
+     context.beginPath();
+     context.arc(100,100,50,0,Math.PI*2,true);
+     context.closePath();
+     context.stroke();
+     context.fill();
+     // Рисуем вторую окружность
+     context.strokeStyle = "#000000";
+     context.fillStyle = "#FFFFFF";
+     context.beginPath();
+     context.arc(110,110,30,0,Math.PI*2,true);
+     context.closePath();
+     context.stroke();
+     context.fill();
+     // Рисуем прямоугольник
+     context.strokeStyle = "#800080	";
+     context.fillStyle = "#fc0";
+     context.beginPath();
+     context.strokeRect(15, 15, 266, 266);
+     context.strokeRect(150, 120, 50, 50);
+     context.closePath();
+     context.stroke();
+     context.fill();
+    }
+    // Рисуем треугольники
+    context.strokeStyle = "#800080	";
+    context.fillStyle = "#FF0000";
+    context.beginPath();
+    context.moveTo(150,270);
+    context.lineTo(40,270);
+    context.lineTo(95,180);
+    context.closePath();
+    context.stroke();
+    context.fill();
+    // Рисуем треугольники
+    context.strokeStyle = "#800080	";
+    context.fillStyle = "#00FF00";
+    context.beginPath();
+    context.moveTo(130,260);
+    context.lineTo(60,260);
+    context.lineTo(95,195);
+    context.closePath();
+    context.stroke();
+    context.fill();
+   }
+  </script>
+ </head>
+ <body>
+   <h2> Мачнев Никита Антонович
+  <h2>
+  <canvas id="smile" width="1000" height="1000">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+ </body>
+</html>
