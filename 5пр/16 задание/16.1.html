@@ -5,14 +5,17 @@
   <title>MathJax</title>
   <script>
   var obj = {green: 'зеленый', red: 'красный', blue: 'голубой'};
+  res1=[];
   for (key in obj) {
-  alert(key);
+    res1.push(key);
   }
 
   var obj = {green: 'зеленый', red: 'красный', blue: 'голубой'};
+  res2=[];
   for (key in obj) {
-  alert(obj[key]);
+  res2.push(obj[key]);
   }
+  alert(res1 + '\n' + res2);
   </script>
 </head>
 <body>

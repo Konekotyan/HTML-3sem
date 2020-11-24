@@ -5,9 +5,11 @@
   <title>MathJax</title>
   <script>
   var obj = {Коля: 200, Вася: 300, Петя: 400};
+  res = [];
   for (var key in obj) {
-  document.write((key) + ' - зарплата ' + (obj[key]) + ' долларов' + '<br>');
+    res.push((key) + ' - зарплата ' + (obj[key]) + ' долларов.');
   }
+  alert(res.join ('\n'));
   </script>
 </head>
 <body>

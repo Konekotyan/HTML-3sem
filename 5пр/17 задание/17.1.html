@@ -5,11 +5,13 @@
   <title>MathJax</title>
   <script>
   var arr = [2, 5, 9, 15, 0, 4];
+  res=[];
   for (var i = 0; i <= arr.length - 1; i++) {
     if (arr[i] > 3 && arr[i] < 10) {
-      alert(arr[i]);
+      res.push(arr[i]);
     }
   }
+  alert(res);
   </script>
 </head>
 <body>
