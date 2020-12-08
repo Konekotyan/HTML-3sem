@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MathJax</title>
+  <div id="elem">К несчастью, нашелся один шут в колпаке на лысом черепе, горбатый отшельник, который заявил, что все это чары и колдовство, что их можно расколдовать, и из упырицы снова получится Фольтестова дочечка, красивенькая как картинка.<br> Надо только отсидеть в подвале всю ночь – и привет, дело в шляпе.<br> 
+    После чего – представляешь себе, Геральт, что это был за придурок, – он отправился на ночь во дворец.<br> Как легко догадаться, осталось от него маловато, почитай, только колпак да посох.
+   </div> <br>
+  <input type="submit" id="button">
+  <script>
+  var elem = document.getElementById('elem');
+  var button = document.getElementById('button');
+  button.addEventListener('click',func);
+  function func() {
+  alert(elem.scrollTop);
+  }
+  </script>
+</head>
+<body>
+</body>
+</html>

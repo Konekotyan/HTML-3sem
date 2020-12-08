@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>15</title>
+        <meta charset="utf-8">
+        <style>
+            #largeImg {
+                border: solid 1px #ccc;
+                width: 550px;
+                height: 500px;
+                padding: 5px;
+            }
+
+            #images a {
+                border: solid 1px #ccc;
+                width: 100px;
+                height: 100px;
+                padding: 3px;
+                margin: 2px;
+                float: left;
+            }
+            #images img {
+                width: 100px;
+                height: 100px;
+            }
+
+            #images a:hover {
+             border-color: #FF9900;
+            }
+
+            #images li {
+             list-style: none;
+            }
+
+            #images {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <p><img id="largeImg" src="album_1.jpg" alt="Large image"></p>
+
+        <ul id="images">
+          <li>
+            <a href="album_1.jpg">
+                <img src="album_1.jpg">
+            </a>
+          </li>
+          <li>
+            <a href="album_2.jpg">
+                <img src="album_2.jpg">
+            </a>
+          </li>
+          <li>
+            <a href="album_3.jpg">
+                <img src="album_3.jpg">
+            </a>
+          </li>
+          <li>
+            <a href="album_4.jpg">
+                <img src="album_4.jpg">
+            </a>
+          </li>
+          <li>
+            <a href="album_5.jpg">
+                <img src="album_5.jpg">
+            </a>
+          </li>
+        </ul>
+
+        <script>
+          images.onclick = function(event) {
+            let image = event.target.closest('a');
+            if (!image) return false;
+            showImages(image.href);
+            event.preventDefault();
+          }
+
+          function showImages(href) {
+            largeImg.src = href;
+          }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MathJax</title>
+<script>
+function go(){
+window.timerId = window.setInterval(timer, 1000);
+document.getElementById('go').disabled = true;
+}
+function timer(){
+if(window.number == undefined || window.number == 4){
+window.number = 1;
+}else window.number = window.number + 1;
+var img = document.getElementById('img');
+img.src = 'album_'+window.number+'.jpg'
+}
+</script>
+<body onload="go()">
+<div id="wrapper">
+<img src="" width="280" height="300" id="img">
+</div>
+  </body>
+  </html>

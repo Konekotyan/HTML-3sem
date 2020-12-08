@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MathJax</title>
+  <input type="text" value="Text" id="Text"/>
+      <button id="ButtonOne" onclick="func('Text')">Click!</button>
+      <button id="ButtonTwo" onclick="func2('Text')">ClickTwo!</button>
+      <script>
+          let txt;
+          function func(id) {
+              txt = document.getElementById(id);
+              txt.style.visibility = 'hidden';
+          }
+
+          function func2(id) {
+              txt = document.getElementById(id);
+              txt.style.visibility = 'visible';
+          }
+      </script>
+</head>
+<body>
+
+</body>
+</html>

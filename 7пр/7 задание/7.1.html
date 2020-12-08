@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MathJax</title>
+  <p id="test">0</p>
+  <input type="submit" value="Нажми на меня" onclick="start()">
+  <script>
+  function start() {
+    window.timerId = window.setInterval(timer,1000);
+  }
+  function timer() {
+    var test = document.getElementById('test');
+    test.innerHTML = parseInt(test.innerHTML)+1;
+  }
+</script>
+</head>
+<body>
+</body>
+</html>
