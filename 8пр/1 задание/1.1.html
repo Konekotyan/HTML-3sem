@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MathJax</title>
+  <style>
+   #car {
+     position: relative;
+     cursor: pointer;
+     width: 600px;
+   }
+ </style>
+</head>
+
+<body>
+ <img id="car" src="BR-232-DB-AG-52501.jpg">
+
+ <script>
+   car.onclick = function() {
+     let start = Date.now();
+     let timer = setInterval(function() {
+       let timePassed = Date.now() - start;
+       car.style.left = timePassed / 5 + 'px';
+       if (timePassed > 2000) clearInterval(timer);
+     }, 20);
+   }
+ </script>
+</body>
+</html>
